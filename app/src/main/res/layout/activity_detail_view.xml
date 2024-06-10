@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/backround_gradient"
+    tools:context=".DetailViewActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Day" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Min Temperature" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Max Temperature" />
+
+            <TextView
+                android:layout_weight="1"
+                android:text="Weather Condition" />
+        </TableRow>
+
+        <TableLayout
+            android:id="@+id/tableData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1,2,3"/>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/averageScreenTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Average Weather Condition: 0"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Back" />
+
+
+</LinearLayout>
