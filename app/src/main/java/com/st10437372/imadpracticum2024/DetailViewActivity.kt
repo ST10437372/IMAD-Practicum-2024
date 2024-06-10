@@ -43,7 +43,7 @@ class DetailViewActivity : AppCompatActivity() {
         }
 
         val averageScreenTime = if (screenTimeData.isNotEmpty()) totalScreenTime / screenTimeData.size else 0
-        binding.averageScreenTime.text = "Average Screen Time: $averageScreenTime"
+        binding.averageScreenTime.text = "Average Weather Conditions: $averageScreenTime"
 
         binding.buttonBack.setOnClickListener {
             finish()

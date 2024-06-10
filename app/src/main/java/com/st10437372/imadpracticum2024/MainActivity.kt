@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                     binding.editTextAfternoonScreenTime.text.clear()
                     binding.editTextNotes.text.clear()
                 } catch (e: NumberFormatException) {
-                    Toast.makeText(this, "Please enter valid numbers for screen time", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, "Please enter valid numbers for temperature", Toast.LENGTH_SHORT).show()
                 }
             } else {
                 Toast.makeText(this, "Please fill in all fields", Toast.LENGTH_SHORT).show()
